@@ -5,19 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bao Nhan Dan</title>
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONt Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>  
     <header class="header">
-        <nav class="main-nav"></nav>
-    </header>
-    <main>
+        <nav class="main-nav">
+            <div class="first-nav">
+                <div class="header-category">
+                    <span class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>                
+                    <span>Danh mục</span>
+                </div>
+
+                <button class="search-button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="second-nav">
+                <ul class="languages">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">Français</a></li>
+                    <li><a href="#">Русский Язык</a></li>
+                    <li><a href="#">Español</a></li>
+                </ul>
+            </div>
+            <div class="third-nav">
+                <ul>
+                    <li><a href="#" title="Tin mới"><i class="far fa-newspaper"></i>Tin mới</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i>Tin địa phương</a></li>
+                    <li><a href="#"><i class="fas fa-envelope-open-text"></i>Nhận tin</a></li>
+                    <li><a href="#">Đăng nhập</a></li>                    
+                </ul>
+            </div>
+        </nav>
         <section class="region-logo">
         </section>
         <div class="wrap-time"></div>
         <div class="hot-news"></div>
+    </header>
+    <main>
         <section class="primary-content">
             <div class="sidebar-left"></div>
             <div class="main-content main-content--primary"></div>
