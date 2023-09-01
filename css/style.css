@@ -1,4 +1,11 @@
-
+:root {
+    --primary: #bd1723;
+    --dark: #212529;
+    --gray: #555555;
+    --light: #e9ecef;
+    --secondary: #6C757D;
+    --white: #fff;
+}
 * {
     box-sizing: border-box;
 }
@@ -15,8 +22,197 @@ html {
 
 body {
     font-family: sans-serif;
-    /* 16px */
-    font-size: 1.6rem; 
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #343a40;
+    text-align: left;
 }
+
+/* HEADER SECTION */
+.main-nav {
+    height: 4.8rem;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 99;
+}
+
+.first-nav{
+    position: absolute;
+    display: flex;
+    height: 3.2rem;
+    left: 1.2rem;
+    gap: .8rem;
+}
+
+.header-category {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border-radius: 4px;
+    padding: 8.5px 12px;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,.3);
+}
+
+.header-category:hover {
+    background: #a6111c;
+    border-color: #a6111c;
+}
+
+.header-category span:last-child {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 1.2rem;
+    height: 0.2rem;
+    background-color: var(--white);
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.hamburger span:not(:first-child) {
+    margin-top: 0.3rem;
+}
+
+.search-button {
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 4px;
+    padding: 4px 12px;
+    background-color: transparent;
+    color: inherit;
+    outline: none;    
+    cursor: pointer;
+    transition: .2s;
+}
+
+.search-button:hover {
+    background: #a6111c;
+    border-color: #a6111c;
+}
+
+
+.second-nav {
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
+}
+
+.second-nav .languages {
+    display: flex;
+    align-items: center;   
+}
+
+.second-nav .languages a {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+    color: inherit;
+    position: relative;
+    padding-left: 13px;
+    font-family: Roboto;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.second-nav .languages a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: var(--white);
+    bottom: 5px;
+    right: 0;
+}
+
+.second-nav .languages a:hover:after {
+    width: calc(100% - 13px);
+    height: 0.5px;
+}
+
+.second-nav .languages li:not(:first-child) a::before {
+    content: "";
+    width: 4px;
+    height: 1px;
+    position: absolute;
+    background: var(--white);
+    top: 50%;
+    left: 4px;
+    display: block;
+    transform: translateY(-50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.third-nav {
+    position: absolute;
+    top: 0;
+    right: 1.2rem;
+    height: 100%;
+}
+
+.third-nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.third-nav ul a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 11.5px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 16px 12px;
+    font-family: Roboto;
+    transition: .2s;
+}
+
+.third-nav ul a:hover {
+    background: #a6111c;
+    border-color: #a6111c;
+}
+
+.third-nav ul li:last-child:before {
+    content: "";
+    height: 1.6rem;
+    width: 0.1rem;
+    background: rgba(255,255,255,.3);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.third-nav ul li:last-child a {
+    background: url('https://static-cms-nhandan.epicdn.me/web/styles/img/icon-login.png?v14-0107') center left 12px no-repeat;
+    padding-left: 4rem;
+}
+
+
+
+.third-nav ul a i {
+    font-weight: 600;
+    margin-right: 1.2rem;
+}
+
+
+
+/* temp */
+main {
+    height: 3500px;
+}
+
 
 
