@@ -1,13 +1,26 @@
 .container {
     width: 128.7rem;
     max-width: 128.7rem;
+    margin: 0 auto;
 }
 
 *, ::after, ::before {
     box-sizing: border-box;
 }
 
+a {
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+}
+
 .fa {
     width: 1.6rem !important;
     height: 1.6rem !important;
+}
+
+@media screen and (min-width: 1366px) {
+    .container {
+        width: 1287px;
+        max-width: 1287px;
+    }
 }
