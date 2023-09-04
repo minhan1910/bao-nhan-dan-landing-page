@@ -208,10 +208,22 @@ body {
 }
 
 
+/* LOGO SECTION */
+.region-logo {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 174px;
+    margin-top: 4.8rem;
+}
 
-/* temp */
-main {
-    height: 3500px;
+.region-logo .logo {
+    background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/logo-nhandan_ver3.png") center center / 312px 120px no-repeat;
+
+    width: 312px;
+    height: 120px;
+    font-size: 0;
+    display: block;
 }
 
 
