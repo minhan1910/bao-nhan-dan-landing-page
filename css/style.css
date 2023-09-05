@@ -2,21 +2,7 @@
   display: flex;
   width: 128.7rem;
   height: 156.301rem;
-}
-
-.main-content.main-content--primary {
-  width: 69.4rem;
-  text-align: center;
-}
-
-/* .story-thumb {
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1) inset;
-} */
-
-.story-thumb a {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  padding: 0 1.6rem;
 }
 
 .sidebar-left {
@@ -29,17 +15,115 @@
   padding-left: 16px;
 }
 
-.story-name a {
-  font-weight: 700;
-  font-size: 28px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #212529;
-  line-height: 4.2rem;
+.story-thumb a {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.story-sum a {
+.story-name a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.story-name a:hover {
+  color: #bd1723;
+  transition-duration: 0.5s;
+}
+
+.main-content.main-content--primary {
+  width: 69.4rem;
+  text-align: center;
+}
+
+.highlight-top--main .story .story-name a {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  font-weight: 700;
+  font-family: PlayfairDisplay;
+}
+
+.highlight-top--main .story .story-sum {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: #888;
+  padding: 0 6rem;
+  font-family: Roboto;
+}
+
+.highlight-top--main .story .story-time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #adb5bd;
+  margin-top: 0.4rem;
+  font-family: Roboto;
+}
+
+.highlight-top--list .story .story-time {
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  color: #adb5bd;
+  font-family: Roboto;
+}
+
+.highlight-top .story-sum a {
   text-decoration: none;
   text-transform: uppercase;
   color: #212529;
+}
+
+.highlight-top--list {
+  padding: 24px 60px 36px 60px;
+  margin: 0 auto;
+}
+
+.hightlight-top--list .story {
+  margin-top: 1.6rem;
+  padding-top: 0;
+}
+
+.highlight-top--list .story:first-child {
+  margin-top: 0;
+}
+
+.highlight-top--list .story .story-name a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8prem;
+  text-align: center;
+  color: #212529;
+  padding-top: 0;
+  font-family: PlayfairDisplay;
+}
+
+.wrap-tittle {
+  text-align: left;
+}
+
+.wrap-tittle a {
+  text-decoration: none;
+  color: #bd1723;
+  font-weight: 600;
+  line-height: 2rem;
+  width: 100%;
+}
+
+.wrap-tittle a span {
+  color: #212529;
+  font-weight: 600;
+}
+
+.highlight-bottom--content .content-right {
+  padding-left: 1.6rem;
+  text-align: center;
 }
