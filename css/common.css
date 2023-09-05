@@ -1,3 +1,25 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  /* 16px */
+  font-size: 1.6rem;
+  
+/*  moi them  */
+    font-weight: 400;
+    line-height: 1.5;
+    color: #343a40;
+    text-align: left;
+}
+
 .container {
     width: 128.7rem;
     max-width: 128.7rem;
@@ -18,9 +40,19 @@ a {
     height: 1.6rem !important;
 }
 
+:root {
+    --primary: #bd1723;
+    --dark: #212529;
+    --gray: #555555;
+    --light: #e9ecef;
+    --secondary: #6C757D;
+    --white: #fff;
+}
+
 @media screen and (min-width: 1366px) {
     .container {
         width: 1287px;
         max-width: 1287px;
     }
 }
+
