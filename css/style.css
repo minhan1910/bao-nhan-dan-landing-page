@@ -112,6 +112,7 @@ h2 a:hover {
 .wrap-tittle {
   text-align: left;
 }
+
 /* end style story sum a */
 
 .main-content.main-content--primary {
@@ -160,17 +161,20 @@ h2 a:hover {
 .highlight-bottom--content {
   display: flex;
 }
+
 .highlight-bottom--content .content-right {
   padding-left: 1.6rem;
   text-align: center;
   width: 34.6rem;
 }
+
 .highlight-bottom--content .content-left {
   text-align: left;
   width: 31.3rem;
   margin-top: 0;
   border-right: 0.1rem solid #e9ecef;
 }
+
 .icon-L {
   background: url(../img/icon-L.png) center center no-repeat;
   width: 2.5rem;
@@ -179,6 +183,7 @@ h2 a:hover {
   margin-right: 0.3rem;
   margin-bottom: -0.3rem;
 }
+
 /* style sidebar top--left  */
 .sidebar-left--story .story-thumb {
   overflow: hidden;
@@ -197,6 +202,7 @@ h2 a:hover {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
+
 /* end style sidebar top--left */
 
 .story-sum p {
@@ -481,8 +487,7 @@ article.view-style::after {
 }
 
 .third-nav ul li:last-child a {
-  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/icon-login.png?v14-0107")
-    center left 12px no-repeat;
+  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/icon-login.png?v14-0107") center left 12px no-repeat;
   padding-left: 4rem;
 }
 
@@ -501,8 +506,7 @@ article.view-style::after {
 }
 
 .region-logo .logo {
-  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/logo-nhandan_ver3.png")
-    center center / 312px 120px no-repeat;
+  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/logo-nhandan_ver3.png") center center / 312px 120px no-repeat;
 
   width: 312px;
   height: 120px;
@@ -516,8 +520,7 @@ article.view-style::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/divider.png")
-    center bottom / 100% 4px no-repeat;
+  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/divider.png") center bottom / 100% 4px no-repeat;
   padding-bottom: 0.8rem;
 }
 
@@ -694,4 +697,143 @@ article.view-style::after {
   margin-top: -1.5rem;
   right: 50%;
   transform: translateX(50%);
+}
+
+/* E-MAGAZINE SECTION */
+
+.e-magazine-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.e-magazine-item {
+  width: 265px;
+  padding-top: 1.6rem;
+  margin-top: 1.6rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.e-magazine-thumb {
+  cursor: pointer;
+  position: relative;
+}
+
+.e-magazine-item:nth-child(-n+2) {
+  padding-top: 0;
+  border-top: 0;
+  margin-top: 0;
+}
+
+.e-magazine-content-left {
+  flex: 0 0 43.5%;
+  max-width: 43.5%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.e-magazine-content-left:after {
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #dee2e6;
+  position: absolute;
+}
+
+.e-magazine-content-right {
+  flex: 1 0 53.83%;
+  max-width: 53.83%;
+  /* flex: 1; */
+}
+
+.e-magazine-thumb a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.e-magazine-thumb {
+  width: 264px;
+  height: 177px;
+}
+
+.e-magazine-thumb:hover {
+  overflow: hidden;
+  opacity: .8;
+}
+
+.e-magazine-title__left a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #212529;
+  padding-top: 8px;
+  position: relative;
+  display: block;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.e-magazine-title__right a {
+  display: block;
+  transition: .5s;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #212529;
+  padding-top: 16px;
+  font-family: PlayfairDisplay;
+  display: block;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.e-magazine-title__left a:hover,
+.e-magazine-title__right a:hover {
+  color: #bd1723;
+}
+
+.e-magazine-content-right .e-magazine-thumb {
+  width: 693px;
+  height: 390px;
+}
+
+.e-magazine-content-right .e-magazine-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #212529;
+  padding-top: 16px;
+  font-family: PlayfairDisplay;
+}
+
+.e-magazine-content-right .e-magazine-item {
+  width: 100%;
+}
+
+.e-magazine-summary {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #888;
+  font-family: Roboto;
+}
+
+.icon-eM {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 0;
+  background: url('https://static-cms-nhandan.epicdn.me/web/styles/img/eM_ver2.png') center center no-repeat;
+  background-size: 22px;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1;
 }
