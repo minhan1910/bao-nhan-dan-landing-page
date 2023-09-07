@@ -67,10 +67,10 @@
   text-align: left;
 }
 
+.big-tittle a:hover,
 h2 a:hover {
   color: #bd1723;
 }
-/* end style story-name a  */
 
 /* style story sum a */
 .story .story-sum {
@@ -184,14 +184,18 @@ h2 a:hover {
   overflow: hidden;
 }
 
-.sidebar-left .sidebar-left--story .sidebar-story-name.small-name {
+.sidebar-left .sidebar-left--story .sidebar-story-name.small-name a {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.5rem;
   text-align: left;
+
+  font-family: Roboto;
+}
+
+.sidebar-left .sidebar-left--story .sidebar-story-name.small-name {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
-  text-align: left;
 }
 /* end style sidebar top--left */
 
@@ -594,7 +598,7 @@ article.view-style::after {
 .hot-news-main {
   position: relative;
   overflow: hidden;
-  margin-top: 8px;
+  margin: 8px auto;
 }
 
 .hot-news-main ul:after {
@@ -602,8 +606,51 @@ article.view-style::after {
   position: absolute;
   top: 0;
   right: 0;
-  width: 86px;
-  height: 20px;
+  width: 8.6rem;
+  height: 2rem;
   z-index: 999;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, #fff 100%);
+}
+
+/* SPOT NEWS SECTION */
+.spot-story {
+  margin: 6.4rem auto 6.6rem auto;
+  width: 128.7rem;
+}
+
+.big-tittle {
+  position: relative;
+  width: 100%;
+}
+
+.big-tittle a {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  color: #343a40;
+  display: block;
+  font-family: PlayfairDisplay;
+  padding: 1.6rem 0;
+  margin-bottom: 2.4rem;
+}
+
+.big-tittle::after {
+  position: absolute;
+  content: "";
+  height: 0.6rem;
+  width: 7rem;
+  background: #bd1723;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.spot-story-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spot-story-list {
 }

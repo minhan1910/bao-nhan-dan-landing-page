@@ -12,47 +12,48 @@ body {
   font-family: sans-serif;
   /* 16px */
   font-size: 1.6rem;
-  
-/*  moi them  */
-    font-weight: 400;
-    line-height: 1.5;
-    color: #343a40;
-    text-align: left;
+
+  /*  moi them  */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  text-align: left;
 }
 
 .container {
-    width: 128.7rem;
-    max-width: 128.7rem;
-    margin: 0 auto;
+  width: 128.7rem;
+  max-width: 128.7rem;
+  margin: 0 auto;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 a {
-    transition: all .1s ease-in-out;
-    text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
 }
 
 .fa {
-    width: 1.6rem !important;
-    height: 1.6rem !important;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
 }
 
 :root {
-    --primary: #bd1723;
-    --dark: #212529;
-    --gray: #555555;
-    --light: #e9ecef;
-    --secondary: #6C757D;
-    --white: #fff;
+  --primary: #bd1723;
+  --dark: #212529;
+  --gray: #555555;
+  --light: #e9ecef;
+  --secondary: #6c757d;
+  --white: #fff;
 }
 
 @media screen and (min-width: 1366px) {
-    .container {
-        width: 1287px;
-        max-width: 1287px;
-    }
+  .container {
+    width: 1287px;
+    max-width: 1287px;
+  }
 }
-
