@@ -148,3 +148,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+h3 {
+  font-size: 2.03rem;
+  margin-bottom: 0;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.43;
+  color: inherit;
+}
