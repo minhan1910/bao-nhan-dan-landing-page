@@ -487,8 +487,7 @@ article.view-style::after {
 }
 
 .third-nav ul li:last-child a {
-  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/icon-login.png?v14-0107")
-    center left 12px no-repeat;
+  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/icon-login.png?v14-0107") center left 12px no-repeat;
   padding-left: 4rem;
 }
 
@@ -507,8 +506,7 @@ article.view-style::after {
 }
 
 .region-logo .logo {
-  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/logo-nhandan_ver3.png")
-    center center / 312px 120px no-repeat;
+  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/logo-nhandan_ver3.png") center center / 312px 120px no-repeat;
 
   width: 312px;
   height: 120px;
@@ -522,8 +520,7 @@ article.view-style::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/divider.png")
-    center bottom / 100% 4px no-repeat;
+  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/divider.png") center bottom / 100% 4px no-repeat;
   padding-bottom: 0.8rem;
 }
 
@@ -830,8 +827,7 @@ article.view-style::after {
   height: 3rem;
   border-radius: 50%;
   font-size: 0;
-  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/eM_ver2.png")
-    center center no-repeat;
+  background: url("https://static-cms-nhandan.epicdn.me/web/styles/img/eM_ver2.png") center center no-repeat;
   background-size: 22px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
@@ -881,8 +877,7 @@ article.view-style::after {
 .homepage-carousel-story {
   width: 100%;
   height: 70rem;
-  background: url(../img/home-carousel-\ story-1.jpeg) center center/ 100%
-    no-repeat;
+  background: url(../img/home-carousel-\ story-1.jpeg) center center/ 100% no-repeat;
   overflow: hidden;
 }
 
@@ -995,7 +990,11 @@ ul.home-tab-right-nav li a.active {
   text-decoration: underline;
 }
 
-ul.home-tab-right-nav li a.nav-choice {
+/* ul.home-tab-right-nav li a.nav-choice {
+  border-left: 0.1rem solid #fff;
+} */
+
+.home-tab-right-nav li:not(:first-child) a {
   border-left: 0.1rem solid #fff;
 }
 
